@@ -4,6 +4,7 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
+  base: process.env.NODE_ENV === 'development' ? '' : '/web-study/',
   lang: 'en-US',
 
   title: 'VuePress',
